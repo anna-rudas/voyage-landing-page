@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+:root {
+  /* -----colors----- */
+  --carrot-orange: #ec8d28;
+  --yellow-orange: #f3ac42;
+  --white: #ffffff;
+  --black: #000000;
+  --blue-sapphire: #2d5d76;
+  --slate-gray: #5c8297;
+  --cadet-gray: #88959c;
+  --davys-gray: #4e555a;
+  --cultured: #ededed;
+  --flame: #ed4928;
+  /* -----variables----- */
+  --bg: var(--white);
+  --bg-light: var(--cultured);
+  --section-name: var(--carrot-orange);
+  --section-title: var(--blue-sapphire);
+  --secondary-bright: var(--yellow-orange);
+  --secondary-dark: var(--slate-gray);
+  --card-title: var(--davys-gray);
+  --paragraph: var(--cadet-gray);
+  --error: var(--flame);
+  --margin: 10px;
+  --padding: 10px;
+  --gap: 10px;
+  --shadow: var(--black);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  cursor: default;
+}
+
+p {
+  color: var(--paragraph);
+  font-size: 1rem;
+  line-height: 22px;
+}
+
+section {
+  height: fit-content;
+  padding: calc(var(--padding) * 2) calc(var(--padding) * 8);
+  margin-bottom: calc(var(--margin) * 5);
+}
+
+a {
+  text-decoration: none;
+}
+
+br {
+  content: "";
+  display: block;
+  margin: 10px 0;
+}
+
+svg {
+  fill: currentColor;
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: var(--padding) calc(var(--padding) * 2);
+  }
+}
