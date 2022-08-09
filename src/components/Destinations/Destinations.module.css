@@ -1,0 +1,85 @@
+.destinations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destCard {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 2);
+  width: 100%;
+  transition: all 0.1s ease-in-out;
+  text-align: left;
+  margin: auto;
+}
+
+.destCard:hover {
+  transform: scale(1.02);
+}
+
+.destCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.cardSecondary {
+  padding-left: var(--padding);
+}
+
+.cardMain {
+  padding: 0 var(--padding);
+  height: 40px;
+}
+
+.reviewsCon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--padding);
+  margin-bottom: var(--margin);
+  color: var(--secondary-bright);
+}
+
+.starsCon {
+  display: flex;
+  gap: 3px;
+}
+
+.starIcon {
+  width: 15px;
+  fill: var(--secondary-bright);
+}
+
+.viewCon {
+  width: 100%;
+  margin-bottom: var(--margin);
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--padding) * 2) 0;
+}
+
+.viewMore {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.viewMore a {
+  color: var(--secondary-bright);
+}
+
+.viewMore a:hover {
+  color: var(--section-name);
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .viewMore {
+    margin-bottom: calc(var(--margin) * 2);
+  }
+
+  .viewCon {
+    max-width: 350px;
+  }
+}

@@ -21,6 +21,14 @@
   color: var(--bg);
 }
 
+.btnBody:hover {
+  cursor: pointer;
+  background-color: var(--bg);
+  color: var(--card-title);
+}
+
+/* home styling */
+
 .companyCon {
   display: flex;
   justify-content: center;
@@ -60,7 +68,63 @@
   width: 50px;
 }
 
+/* card styling */
+
+.card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 350px;
+}
+
+.cardMain {
+  color: var(--card-title);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.cardsCon {
+  display: grid;
+  gap: calc(var(--gap) * 2);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* text styling */
+
+.secondaryBright {
+  color: var(--secondary-bright);
+  font-size: 1rem;
+}
+
+.sectionName {
+  font-family: "Lobster", cursive;
+  color: var(--section-name);
+  font-size: 1.1rem;
+}
+
+.sectionTitle {
+  color: var(--section-title);
+  padding-bottom: calc(var(--padding) * 2);
+  padding-top: var(--padding);
+  font-size: 2rem;
+}
+
+@media (max-width: 900px) {
+  .cardsCon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .cardsCon {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.7rem;
+  }
+
   .companyName {
     font-size: 1.8rem;
   }
