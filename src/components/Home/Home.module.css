@@ -1,0 +1,143 @@
+.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../../images/home.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--bg);
+  background-repeat: no-repeat;
+  padding: 0 calc(var(--padding) * 3);
+  height: 100vh;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(var(--padding) * 2);
+  z-index: 3;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburgerIcon {
+  display: none;
+}
+
+.triangle {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  justify-content: center;
+  padding: calc(var(--padding) * 3);
+}
+
+.heroText {
+  font-size: 2rem;
+  font-family: "Lobster", cursive;
+}
+
+.heroTitle {
+  font-size: 4rem;
+  margin-bottom: calc(var(--margin) * 4);
+}
+
+@media (min-width: 900px) {
+  .mobileMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none !important;
+  }
+
+  .hamburgerIcon {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+  .mobileMenu {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 95px;
+    left: 30px;
+    right: 30px;
+    bottom: fit-content;
+    padding: calc(var(--padding) * 3);
+    background-color: var(--bg);
+    gap: calc(var(--gap) * 4);
+  }
+
+  .mobileMenu li {
+    font-size: 1.3rem !important;
+  }
+
+  .mobileMenu a {
+    color: var(--card-title) !important;
+  }
+
+  .mobileMenu a:hover {
+    color: var(--secondary-bright) !important;
+  }
+
+  .triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid var(--bg);
+    border-left: 30px solid transparent;
+    position: absolute;
+    top: 65px;
+    right: 30px;
+  }
+
+  .heroTitle {
+    margin-bottom: calc(var(--margin) * 2);
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    padding: 0 calc(var(--padding) * 2);
+  }
+
+  .triangle {
+    right: 10px;
+  }
+
+  .mobileMenu {
+    left: 10px;
+    right: 10px;
+  }
+
+  .header {
+    padding: calc(var(--padding) * 2) 0;
+  }
+
+  .heroText {
+    font-size: 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+    margin-bottom: calc(var(--margin) * 6);
+  }
+}

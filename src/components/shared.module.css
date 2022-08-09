@@ -1,0 +1,71 @@
+/* button styles */
+.btnBook {
+  width: 200px;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--bg);
+  background-color: var(--section-name);
+  border: 2px solid var(--section-name);
+  padding: var(--padding);
+  font-size: 1.1rem;
+  border-radius: 35px;
+  transition: all 0.2s ease-in-out;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnHome:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--bg);
+}
+
+.companyCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companyName {
+  font-family: "Righteous", cursive;
+  color: var(--bg);
+  display: flex;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.navList {
+  display: flex;
+  gap: calc(var(--gap) * 2);
+  align-items: center;
+}
+
+.navList li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.navList a {
+  transition: all 0.1s ease-in-out;
+  color: var(--bg);
+}
+
+.navList a:hover {
+  color: var(--secondary-bright);
+}
+
+.companyIcon {
+  fill: var(--bg);
+  width: 50px;
+}
+
+@media (max-width: 480px) {
+  .companyName {
+    font-size: 1.8rem;
+  }
+
+  .companyIcon {
+    width: 35px;
+  }
+}
