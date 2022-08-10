@@ -1,0 +1,24 @@
+.galleryCon {
+  height: 80vh;
+}
+
+.credit {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: var(--bg);
+  text-shadow: 1px 1px 2px var(--shadow);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .galleryCon {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .galleryCon {
+    height: 200vh;
+  }
+}

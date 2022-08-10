@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import Destinations from "./components/Destinations";
 import Home from "./components/Home";
 import Services from "./components/Services";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Home />
       <Destinations />
       <Services />
+      <Gallery />
     </div>
   );
 }
