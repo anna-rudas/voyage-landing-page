@@ -1,0 +1,24 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsCon {
+  margin-bottom: calc(var(--margin) * 4);
+}
+
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: calc(var(--gap) * 2);
+  padding: calc(var(--padding) * 2);
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+
+.cardMain {
+  height: 40px;
+}

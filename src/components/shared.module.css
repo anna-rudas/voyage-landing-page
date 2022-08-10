@@ -88,6 +88,12 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.cardIcons {
+  fill: var(--section-name);
+  width: 100px;
+  height: 100px;
+}
+
 /* text styling */
 
 .secondaryBright {
