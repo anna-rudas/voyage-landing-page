@@ -7,6 +7,10 @@ import HotelRoomIcon from "./icons/HotelRoomIcon";
 import TaxiIcon from "./icons/TaxiIcon";
 import TourGuideIcon from "./icons/TourGuideIcon";
 import shared from "./components/shared.module.css";
+import johnSmith from "./images/testimonials/john-smith.jpg";
+import janeSmith from "./images/testimonials/jane-smith.jpg";
+import jessicaDoe from "./images/testimonials/jessica-doe.jpg";
+import janeDone from "./images/testimonials/jane-doe.jpg";
 
 export const destinations = [
   {
@@ -55,5 +59,36 @@ export const services = [
     service: "Tour guides",
     text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, distinctio?",
     icon: <TourGuideIcon className={shared.cardIcons} />,
+  },
+];
+
+export const testimonies = [
+  {
+    name: "Jane Smith",
+    testimony:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit autem consectetur inventore officiis nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    profession: "Writer at Travel Today",
+    image: janeSmith,
+  },
+  {
+    name: "John Smith",
+    testimony:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    profession: "Photographer at Photografia",
+    image: johnSmith,
+  },
+  {
+    name: "Jessica Doe",
+    testimony:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, modi at officiis nisi distinctio facilis eius impedit. Eos sit autem consectetur inventore officiis nemo.",
+    profession: "Influencer",
+    image: jessicaDoe,
+  },
+  {
+    name: "Jane Doe",
+    testimony:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sit autem consectetur inventore officiis nemo.",
+    profession: "Writer at Company",
+    image: janeDone,
   },
 ];

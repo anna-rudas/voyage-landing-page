@@ -4,6 +4,7 @@ import Destinations from "./components/Destinations";
 import Home from "./components/Home";
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Destinations />
       <Services />
       <Gallery />
+      <Testimonials />
     </div>
   );
 }

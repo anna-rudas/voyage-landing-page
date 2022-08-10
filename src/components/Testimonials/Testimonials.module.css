@@ -1,0 +1,39 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsCon {
+  margin-bottom: calc(var(--margin) * 4);
+}
+
+.testimonialCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: calc(var(--padding) * 2);
+  gap: calc(var(--gap) * 4);
+  justify-content: space-between;
+  margin: auto;
+  height: 100%;
+}
+
+.testimonialCard img {
+  width: 60px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.partCard {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 2);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bottom {
+  height: 70px;
+}
