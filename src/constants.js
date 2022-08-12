@@ -92,3 +92,9 @@ export const testimonies = [
     image: janeDone,
   },
 ];
+
+export const statBubbles = [
+  { amount: 420, des: "clients" },
+  { amount: 69, des: "tours" },
+  { amount: 42, des: "countries" },
+];

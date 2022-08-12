@@ -94,6 +94,11 @@
   height: 100px;
 }
 
+.lightShadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
 /* galleries */
 .galleryCon {
   display: flex;
@@ -158,6 +163,11 @@
   font-size: 1rem;
 }
 
+.secondaryTitle {
+  color: var(--card-title);
+  font-size: 1.5rem;
+}
+
 @media (max-width: 900px) {
   .cardsCon {
     grid-template-columns: repeat(2, 1fr);
@@ -182,6 +192,10 @@
 @media (max-width: 480px) {
   .sectionTitle {
     font-size: 1.7rem;
+  }
+
+  .secondaryTitle {
+    font-size: 1.4rem;
   }
 
   .companyName {
