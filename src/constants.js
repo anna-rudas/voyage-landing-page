@@ -98,3 +98,6 @@ export const statBubbles = [
   { amount: 69, des: "tours" },
   { amount: 42, des: "countries" },
 ];
+
+export const emailRegex =
+  /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;

@@ -27,6 +27,35 @@
   color: var(--card-title);
 }
 
+.sentBtn {
+  animation-duration: 1.2s;
+  animation-name: circleTick;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes circleTick {
+  0% {
+    border-radius: 35px;
+    width: 200px;
+  }
+  40% {
+    border-radius: 50%;
+    width: 50px;
+  }
+  60% {
+    border-radius: 50%;
+    width: 50px;
+  }
+  100% {
+    border-radius: 35px;
+    width: 200px;
+  }
+}
+
 /* home styling */
 
 .companyCon {
@@ -166,6 +195,23 @@
 .secondaryTitle {
   color: var(--card-title);
   font-size: 1.5rem;
+}
+
+.inputStyle {
+  padding: 5px;
+  margin: 2px 0;
+  border: 1px solid var(--paragraph);
+  border-radius: 3px;
+  resize: none;
+  color: var(--card-title);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.inputStyle:focus {
+  outline: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 @media (max-width: 900px) {
