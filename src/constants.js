@@ -14,6 +14,9 @@ import janeDone from "./images/testimonials/jane-doe.jpg";
 import MailIcon from "./icons/MailIcon";
 import MapDotIcon from "./icons/MapDotIcon";
 import PhoneIcon from "./icons/PhoneIcon";
+import FacebookIcon from "./icons/FacebookIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import TwitterIcon from "./icons/TwitterIcon";
 
 export const destinations = [
   {
@@ -118,4 +121,10 @@ export const details = [
     text: "info@voyage.com",
     icon: <MailIcon className={shared.contactIcons} />,
   },
+];
+
+export const socialMediaLinks = [
+  { name: "Instagram", icon: <InstagramIcon className={shared.footerIcons} /> },
+  { name: "Twitter", icon: <TwitterIcon className={shared.footerIcons} /> },
+  { name: "Facebook", icon: <FacebookIcon className={shared.footerIcons} /> },
 ];

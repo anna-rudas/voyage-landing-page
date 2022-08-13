@@ -1,0 +1,31 @@
+.footer {
+  height: fit-content;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../../images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--bg);
+  background-repeat: no-repeat;
+  padding: calc(var(--padding) * 4);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 5);
+  align-items: center;
+}
+
+.footer a {
+  color: var(--bg);
+}
+
+.iconCon {
+  display: flex;
+  gap: calc(var(--gap) * 2);
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .navList {
+    flex-direction: column;
+  }
+}

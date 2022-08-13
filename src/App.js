@@ -8,6 +8,7 @@ import Testimonials from "./components/Testimonials";
 import About from "./components/About";
 import Newsletter from "./components/Newsletter";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Newsletter />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -223,6 +223,17 @@
   fill: var(--section-name);
 }
 
+.footerIcons {
+  width: 30px;
+  height: 30px;
+  fill: var(--bg);
+  transition: all 0.1s ease-in-out;
+}
+
+.footerIcons:hover {
+  fill: var(--secondary-bright);
+}
+
 @media (max-width: 900px) {
   .cardsCon {
     grid-template-columns: repeat(2, 1fr);
