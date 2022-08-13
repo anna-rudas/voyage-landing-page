@@ -11,6 +11,9 @@ import johnSmith from "./images/testimonials/john-smith.jpg";
 import janeSmith from "./images/testimonials/jane-smith.jpg";
 import jessicaDoe from "./images/testimonials/jessica-doe.jpg";
 import janeDone from "./images/testimonials/jane-doe.jpg";
+import MailIcon from "./icons/MailIcon";
+import MapDotIcon from "./icons/MapDotIcon";
+import PhoneIcon from "./icons/PhoneIcon";
 
 export const destinations = [
   {
@@ -101,3 +104,18 @@ export const statBubbles = [
 
 export const emailRegex =
   /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i;
+
+export const details = [
+  {
+    text: "Rathausstraße 5, 10178 Berlin",
+    icon: <MapDotIcon className={shared.contactIcons} />,
+  },
+  {
+    text: "+49 30 123456",
+    icon: <PhoneIcon className={shared.contactIcons} />,
+  },
+  {
+    text: "info@voyage.com",
+    icon: <MailIcon className={shared.contactIcons} />,
+  },
+];

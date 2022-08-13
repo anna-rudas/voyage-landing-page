@@ -7,6 +7,7 @@ import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
 import About from "./components/About";
 import Newsletter from "./components/Newsletter";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Testimonials />
       <About />
       <Newsletter />
+      <Contact />
     </div>
   );
 }
