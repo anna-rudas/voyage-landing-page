@@ -1,0 +1,31 @@
+.credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(var(--margin) * 4);
+}
+
+.galleryCon {
+  height: 160vh;
+  margin: calc(var(--margin) * 3) 0;
+}
+
+.backToMain {
+  padding: calc(var(--padding) * 3) 0;
+}
+
+.btnBack {
+  width: 280px !important;
+}
+
+@media (max-width: 900px) {
+  .galleryCon {
+    height: 330vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .galleryCon {
+    height: 250vh;
+  }
+}

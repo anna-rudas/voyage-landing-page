@@ -1,28 +1,19 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import Destinations from "./components/Destinations";
-import Home from "./components/Home";
-import Services from "./components/Services";
-import Gallery from "./components/Gallery";
-import Testimonials from "./components/Testimonials";
-import About from "./components/About";
-import Newsletter from "./components/Newsletter";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Credits from "./components/Credits";
+import Main from "./Main";
 
 function App() {
   return (
-    <div className="wrapper">
-      <Home />
-      <Destinations />
-      <Services />
-      <Gallery />
-      <Testimonials />
-      <About />
-      <Newsletter />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="wrapper">
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/credits" element={<Credits />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

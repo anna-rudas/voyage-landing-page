@@ -24,6 +24,10 @@
   justify-content: center;
 }
 
+.creditStyle:hover {
+  color: var(--secondary-bright);
+}
+
 @media (max-width: 900px) {
   .navList {
     flex-direction: column;

@@ -4,6 +4,7 @@ import shared from "../shared.module.css";
 import { className } from "../../helpers";
 import CompanyIcon from "../../icons/CompanyIcon";
 import { socialMediaLinks } from "../../constants";
+import { Link } from "react-router-dom";
 
 const menuItems = [
   "Home",
@@ -32,7 +33,9 @@ function Footer() {
           );
         })}
       </ul>
-
+      <Link to="/credits" {...className(style.creditStyle)}>
+        Images credit
+      </Link>
       <div {...className(style.iconCon)}>
         {socialMediaLinks.map((currentLink) => {
           return (
