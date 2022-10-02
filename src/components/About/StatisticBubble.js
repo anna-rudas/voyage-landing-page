@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./About.module.css";
+import * as style from "./About.module.css";
 import { className } from "../../helpers";
 
 function StatisticBubble({ amount, des }) {

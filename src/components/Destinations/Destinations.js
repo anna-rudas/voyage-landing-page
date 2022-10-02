@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Destinations.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Destinations.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 import DestinationCard from "./DestinationCard";
 import { destinations } from "../../constants";

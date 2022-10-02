@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Home.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Home.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 import CompanyIcon from "../../icons/CompanyIcon";
 import NavBar from "./NavBar";

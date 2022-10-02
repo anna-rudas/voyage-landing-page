@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Testimonials.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Testimonials.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 
 function TestimonialCard({ name, testimony, profession, image }) {

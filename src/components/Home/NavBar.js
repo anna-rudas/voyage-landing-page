@@ -1,17 +1,9 @@
 import React, { useState } from "react";
-import style from "./Home.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Home.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 import HamburgerIcon from "../../icons/HamburgerIcon";
-
-const menuItems = [
-  "Home",
-  "Destinations",
-  "Services",
-  "Gallery",
-  "About us",
-  "Contact",
-];
+import { menuItems } from "../../constants";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -6,7 +6,7 @@ import HeadphonesIcon from "./icons/HeadphonesIcon";
 import HotelRoomIcon from "./icons/HotelRoomIcon";
 import TaxiIcon from "./icons/TaxiIcon";
 import TourGuideIcon from "./icons/TourGuideIcon";
-import shared from "./components/shared.module.css";
+import * as shared from "./components/shared.module.css";
 import johnSmith from "./images/testimonials/john-smith.jpg";
 import janeSmith from "./images/testimonials/jane-smith.jpg";
 import jessicaDoe from "./images/testimonials/jessica-doe.jpg";
@@ -127,4 +127,28 @@ export const socialMediaLinks = [
   { name: "Instagram", icon: <InstagramIcon className={shared.footerIcons} /> },
   { name: "Twitter", icon: <TwitterIcon className={shared.footerIcons} /> },
   { name: "Facebook", icon: <FacebookIcon className={shared.footerIcons} /> },
+];
+
+export const emptyFormData = {
+  name: "",
+  email: "",
+  phone: "",
+  subject: "",
+  text: "",
+};
+
+export const inputs = [
+  { id: "name", innerText: "Name" },
+  { id: "email", innerText: "Email address" },
+  { id: "phone", innerText: "Phone number" },
+  { id: "subject", innerText: "Subject" },
+];
+
+export const menuItems = [
+  "Home",
+  "Destinations",
+  "Services",
+  "Gallery",
+  "About us",
+  "Contact",
 ];

@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Contact.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Contact.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 
 function Input({ id, innerText, formData, setValue }) {

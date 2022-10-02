@@ -1,13 +1,20 @@
 import React from "react";
-import style from "./Destinations.module.css";
+import * as style from "./Destinations.module.css";
 import { className } from "../../helpers";
-import shared from "../shared.module.css";
+import * as shared from "../shared.module.css";
 import StarIcon from "../../icons/StarIcon";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function DestinationCard({ source, duration, location, reviews }) {
   return (
     <a href="#destinations" {...className(style.destCard, shared.card)}>
-      <img src={source} alt="" />
+      <LazyLoadImage
+        src={source}
+        alt=""
+        effect="blur"
+        {...className(style.destCardImg)}
+      />
       <span {...className(shared.secondaryBright, style.cardSecondary)}>
         {duration} day trip
       </span>

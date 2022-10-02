@@ -1,6 +1,6 @@
 import React from "react";
 import { className } from "../../helpers";
-import shared from "../shared.module.css";
+import * as shared from "../shared.module.css";
 
 function Column({ columnArray }) {
   return (

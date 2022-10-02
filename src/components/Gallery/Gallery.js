@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Gallery.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Gallery.module.css";
+import * as shared from "../shared.module.css";
 import { className, sliceArray } from "../../helpers";
 import images from "./Images";
 import Column from "./Column";

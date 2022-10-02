@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import style from "./Newsletter.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Newsletter.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 import { emailRegex } from "../../constants";
 import CheckIcon from "../../icons/CheckIcon";

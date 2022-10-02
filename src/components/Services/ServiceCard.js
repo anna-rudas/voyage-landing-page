@@ -1,7 +1,7 @@
 import React from "react";
-import shared from "../shared.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
-import style from "./Services.module.css";
+import * as style from "./Services.module.css";
 
 function ServiceCard({ service, text, icon }) {
   return (

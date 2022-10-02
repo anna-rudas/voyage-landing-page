@@ -1,19 +1,10 @@
 import React from "react";
-import style from "./Footer.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Footer.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 import CompanyIcon from "../../icons/CompanyIcon";
-import { socialMediaLinks } from "../../constants";
+import { socialMediaLinks, menuItems } from "../../constants";
 import { Link } from "react-router-dom";
-
-const menuItems = [
-  "Home",
-  "Destinations",
-  "Services",
-  "Gallery",
-  "About us",
-  "Contact",
-];
 
 function Footer() {
   return (

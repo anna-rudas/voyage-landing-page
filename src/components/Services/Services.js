@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./Services.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Services.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 import ServiceCard from "./ServiceCard";
 import { services } from "../../constants";

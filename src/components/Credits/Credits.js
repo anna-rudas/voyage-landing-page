@@ -1,8 +1,8 @@
 import React from "react";
 import images from "./Images";
-import style from "./Credits.module.css";
+import * as style from "./Credits.module.css";
 import { sliceArray, className } from "../../helpers";
-import shared from "../shared.module.css";
+import * as shared from "../shared.module.css";
 import Column from "./Column";
 import { Link } from "react-router-dom";
 

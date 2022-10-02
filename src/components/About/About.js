@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./About.module.css";
-import shared from "../shared.module.css";
+import * as style from "./About.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 import group from "../../images/group.jpg";
 import StatisticBubble from "./StatisticBubble";

@@ -1,24 +1,10 @@
 import React, { useState } from "react";
 import Input from "./Input";
-import style from "./Contact.module.css";
-import shared from "../shared.module.css";
+import * as style from "./Contact.module.css";
+import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 import CheckIcon from "../../icons/CheckIcon";
-
-const emptyFormData = {
-  name: "",
-  email: "",
-  phone: "",
-  subject: "",
-  text: "",
-};
-
-const inputs = [
-  { id: "name", innerText: "Name" },
-  { id: "email", innerText: "Email address" },
-  { id: "phone", innerText: "Phone number" },
-  { id: "subject", innerText: "Subject" },
-];
+import { emptyFormData, inputs } from "../../constants";
 
 function Form() {
   const [formData, setFormData] = useState(emptyFormData);
@@ -76,7 +62,7 @@ function Form() {
             );
           })}
         </div>
-        <div {...className(style.formPart, style.formText)}>
+        <div {...className(style.formText)}>
           <label htmlFor="text">Your message:</label>
           <textarea
             {...className(shared.inputStyle)}
