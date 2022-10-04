@@ -8,6 +8,12 @@ import { menuItems } from "../../constants";
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleResize = () => {
+    setIsMenuOpen(false);
+  };
+
+  window.addEventListener("resize", handleResize);
+
   return (
     <nav {...className(style.nav)}>
       <div {...className(isMenuOpen && style.triangle)}></div>

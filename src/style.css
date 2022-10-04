@@ -1,32 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Lobster&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-
 :root {
-  /* -----colors----- */
-  --carrot-orange: #ec8d28;
-  --yellow-orange: #f3ac42;
-  --white: #ffffff;
-  --black: #000000;
-  --blue-sapphire: #2d5d76;
-  --slate-gray: #5c8297;
-  --cadet-gray: #88959c;
-  --davys-gray: #4e555a;
-  --cultured: #ededed;
-  --flame: #ed4928;
-  /* -----variables----- */
-  --bg: var(--white);
-  --bg-light: var(--cultured);
-  --section-name: var(--carrot-orange);
-  --section-title: var(--blue-sapphire);
-  --secondary-bright: var(--yellow-orange);
-  --secondary-dark: var(--slate-gray);
-  --card-title: var(--davys-gray);
-  --paragraph: var(--cadet-gray);
-  --error: var(--flame);
+  --bg-primary: #ffffff;
+  --bg-secondary: #ededed;
+  --section-name: #ec8d28;
+  --section-title: #2d5d76;
+  --text-light: #f3ac42;
+  --text-dark: #5c8297;
+  --title-text: #4e555a;
+  --paragraph-text: #88959c;
+  --error: #ed4928;
   --margin: 10px;
   --padding: 10px;
+  --border-radius: 5px;
   --gap: 10px;
-  --shadow: var(--black);
+  --text-shadow: #000000;
+  --font-primary: "Josefin Sans", sans-serif, Arial, Helvetica, sans-serif;
+  --font-secondary: "Lobster", "Brush Script MT";
+  --font-company: "Righteous", Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -37,25 +26,18 @@
 }
 
 .wrapper {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--font-primary);
   text-align: center;
   cursor: default;
-}
-
-p {
-  color: var(--paragraph);
-  font-size: 1rem;
-  line-height: 22px;
-}
-
-section {
-  height: fit-content;
-  padding: calc(var(--padding) * 2) calc(var(--padding) * 8);
-  margin-bottom: calc(var(--margin) * 5);
+  background-color: var(--bg-primary);
 }
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 br {
@@ -66,10 +48,4 @@ br {
 
 svg {
   fill: currentColor;
-}
-
-@media (max-width: 480px) {
-  section {
-    padding: var(--padding) calc(var(--padding) * 2);
-  }
 }

@@ -8,7 +8,7 @@ import { statBubbles } from "../../constants";
 
 function About() {
   return (
-    <section id="about">
+    <section id="about" {...className(shared.section)}>
       <span {...className(shared.sectionName)}>About us</span>
       <h2 {...className(shared.sectionTitle)}>Who we are</h2>
       <div {...className(style.aboutCon)}>
@@ -25,8 +25,8 @@ function About() {
           })}
         </div>
         <div {...className(style.aboutText)}>
-          <h3 {...className(shared.secondaryTitle)}>Nice to meet you!</h3>
-          <p>
+          <h3 {...className(shared.titleSecondary)}>Nice to meet you!</h3>
+          <p {...className(shared.paragraph)}>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus,
             incidunt consectetur nostrum ipsa itaque non sapiente.
             <br />

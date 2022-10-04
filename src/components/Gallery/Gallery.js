@@ -10,7 +10,7 @@ const columnsPart = sliceArray(columns, 2);
 
 function Gallery() {
   return (
-    <section id="gallery">
+    <section id="gallery" {...className(shared.section)}>
       <span {...className(shared.sectionName)}>Gallery</span>
       <h2 {...className(shared.sectionTitle)}>What other people shared</h2>
       <div {...className(shared.galleryCon, style.galleryCon)}>

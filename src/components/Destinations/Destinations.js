@@ -7,7 +7,10 @@ import { destinations } from "../../constants";
 
 function Destinations() {
   return (
-    <section id="destinations" {...className(style.destinations)}>
+    <section
+      id="destinations"
+      {...className(style.destinations, shared.section)}
+    >
       <span {...className(shared.sectionName)}>Destinations</span>
       <h2 {...className(shared.sectionTitle)}>Popular right now</h2>
       <div {...className(shared.cardsCon)}>
@@ -22,7 +25,7 @@ function Destinations() {
           <a href="#destinations">View more</a>
         </div>
       </div>
-      <button {...className(shared.btnBook, shared.btnBody)}>Book now</button>
+      <button {...className(shared.btn, shared.btnBody)}>Book now</button>
     </section>
   );
 }

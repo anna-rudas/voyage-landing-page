@@ -12,23 +12,22 @@
   transition: all 0.1s ease-in-out;
   text-align: left;
   margin: auto;
-}
-
-.destCard:hover {
-  transform: scale(1.02);
+  min-height: 210px;
 }
 
 .destCardImg {
   width: 100%;
   height: auto;
-  border-radius: 10px 10px 0 0;
+  border-radius: calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0
+    0;
+  min-height: 130px;
 }
 
-.cardSecondary {
+.textSecondaryLight {
   padding-left: var(--padding);
 }
 
-.cardMain {
+.titlePrimary {
   padding: 0 var(--padding);
   height: 40px;
 }
@@ -38,7 +37,7 @@
   justify-content: space-between;
   padding: 0 var(--padding);
   margin-bottom: var(--margin);
-  color: var(--secondary-bright);
+  color: var(--text-light);
 }
 
 .starsCon {
@@ -48,7 +47,7 @@
 
 .starIcon {
   width: 15px;
-  fill: var(--secondary-bright);
+  fill: var(--text-light);
 }
 
 .viewCon {
@@ -66,12 +65,18 @@
 }
 
 .viewMore a {
-  color: var(--secondary-bright);
+  color: var(--text-light);
 }
 
-.viewMore a:hover {
-  color: var(--section-name);
-  text-decoration: underline;
+@media (hover: hover) {
+  .destCard:hover {
+    transform: scale(1.02);
+  }
+
+  .viewMore a:hover {
+    color: var(--section-name);
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 480px) {

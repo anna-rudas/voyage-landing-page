@@ -29,7 +29,7 @@ function Credit() {
       </div>
       <div {...className(style.backToMain)}>
         <Link to="/">
-          <button {...className(shared.btnBook, shared.btnBody, style.btnBack)}>
+          <button {...className(shared.btn, shared.btnBody, style.btnBack)}>
             Back to the landing page
           </button>
         </Link>

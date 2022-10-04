@@ -1,5 +1,6 @@
 .newsletter {
   padding: 0;
+  margin-bottom: calc(var(--margin) * 5);
 }
 
 .newsCon {
@@ -7,7 +8,7 @@
     url("../../images/newsletter.jpg");
   background-size: cover;
   background-position: center;
-  color: var(--bg);
+  color: var(--bg-primary);
   background-repeat: no-repeat;
   height: 100%;
   display: flex;
@@ -44,7 +45,7 @@
   max-width: 270px;
   height: 65px;
   border: 2px solid transparent;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 .newsSecondary {
@@ -58,13 +59,13 @@
 }
 
 .errorCon {
-  border: 2px solid var(--flame);
-  border-radius: 5px;
-  background-color: var(--flame);
+  border: 2px solid var(--error);
+  border-radius: var(--border-radius);
+  background-color: var(--error);
 }
 
 .errorMsg {
-  color: var(--bg);
+  color: var(--bg-primary);
   font-size: 0.7rem;
   font-weight: 600;
   text-align: left;

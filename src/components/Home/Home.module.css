@@ -3,7 +3,7 @@
     url("../../images/home.jpg");
   background-size: cover;
   background-position: center;
-  color: var(--bg);
+  color: var(--bg-primary);
   background-repeat: no-repeat;
   padding: 0 calc(var(--padding) * 3);
   height: 100vh;
@@ -46,7 +46,7 @@
 
 .heroText {
   font-size: 2rem;
-  font-family: "Lobster", cursive;
+  font-family: var(--font-secondary);
 }
 
 .heroTitle {
@@ -80,9 +80,8 @@
     top: 95px;
     left: 30px;
     right: 30px;
-    bottom: fit-content;
     padding: calc(var(--padding) * 3);
-    background-color: var(--bg);
+    background-color: var(--bg-primary);
     gap: calc(var(--gap) * 4);
   }
 
@@ -91,18 +90,18 @@
   }
 
   .mobileMenu a {
-    color: var(--card-title) !important;
+    color: var(--title-text) !important;
   }
 
   .mobileMenu a:hover {
-    color: var(--secondary-bright) !important;
+    color: var(--text-light) !important;
   }
 
   .triangle {
     display: block;
     width: 0;
     height: 0;
-    border-bottom: 30px solid var(--bg);
+    border-bottom: 30px solid var(--bg-primary);
     border-left: 30px solid transparent;
     position: absolute;
     top: 65px;

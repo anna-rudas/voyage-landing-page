@@ -7,7 +7,7 @@ import { testimonies } from "../../constants";
 
 function Testimonials() {
   return (
-    <section {...className(style.testimonials)}>
+    <section {...className(style.testimonials, shared.section)}>
       <span {...className(shared.sectionName)}>Testimonials</span>
       <h2 {...className(shared.sectionTitle)}>Our clients say</h2>
       <div {...className(shared.cardsCon, style.cardsCon)}>
@@ -15,7 +15,7 @@ function Testimonials() {
           return <TestimonialCard {...currentTest} key={currentTest.name} />;
         })}
       </div>
-      <button {...className(shared.btnBook, shared.btnBody)}>Book now</button>
+      <button {...className(shared.btn, shared.btnBody)}>Book now</button>
     </section>
   );
 }

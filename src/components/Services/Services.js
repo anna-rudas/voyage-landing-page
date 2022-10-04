@@ -7,7 +7,7 @@ import { services } from "../../constants";
 
 function Services() {
   return (
-    <section id="services" {...className(style.services)}>
+    <section id="services" {...className(style.services, shared.section)}>
       <span {...className(shared.sectionName)}>Services</span>
       <h2 {...className(shared.sectionTitle)}>What we can offer</h2>
       <div {...className(shared.cardsCon, style.cardsCon)}>
@@ -15,7 +15,7 @@ function Services() {
           return <ServiceCard {...currentServ} key={currentServ.service} />;
         })}
       </div>
-      <button {...className(shared.btnBook, shared.btnBody)}>Book now</button>
+      <button {...className(shared.btn, shared.btnBody)}>Book now</button>
     </section>
   );
 }

@@ -8,11 +8,11 @@ function TestimonialCard({ name, testimony, profession, image }) {
     <div {...className(style.testimonialCard, shared.card)}>
       <div {...className(style.partCard)}>
         <img src={image} alt="" />
-        <p>{testimony}</p>
+        <p {...className(shared.paragraph)}>{testimony}</p>
       </div>
       <div {...className(style.partCard, style.bottom)}>
-        <span {...className(shared.cardMain)}>{name}</span>
-        <span {...className(shared.secondaryDark)}>{profession}</span>
+        <span {...className(shared.titlePrimary)}>{name}</span>
+        <span {...className(shared.textSecondaryDark)}>{profession}</span>
       </div>
     </div>
   );

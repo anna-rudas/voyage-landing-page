@@ -70,7 +70,7 @@ function Newsletter() {
           </div>
           <button
             {...className(
-              shared.btnBook,
+              shared.btn,
               shared.btnHome,
               isBtnPressed && shared.sentBtn
             )}

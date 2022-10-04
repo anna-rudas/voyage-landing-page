@@ -8,7 +8,7 @@ import IconAndText from "./IconAndText";
 function Details() {
   return (
     <div {...className(style.detailsCon)}>
-      <span {...className(shared.secondaryTitle)}>Contact Information</span>
+      <span {...className(shared.titleSecondary)}>Contact Information</span>
       <div {...className(style.details)}>
         {details.map((currentItem) => {
           return <IconAndText key={currentItem.text} {...currentItem} />;

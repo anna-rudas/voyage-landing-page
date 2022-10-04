@@ -18,7 +18,7 @@ function Home() {
       <div {...className(style.hero)}>
         <span {...className(style.heroText)}>Make your dreams a reality</span>
         <h1 {...className(style.heroTitle)}>Plan your vacation with us</h1>
-        <button {...className(shared.btnBook, shared.btnHome)}>Book now</button>
+        <button {...className(shared.btn, shared.btnHome)}>Book now</button>
       </div>
     </section>
   );

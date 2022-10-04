@@ -1,62 +1,18 @@
-/* button styles */
-.btnBook {
+.btn {
   width: 200px;
-  font-family: "Josefin Sans", sans-serif;
-  color: var(--bg);
+  font-family: var(--font-primary);
+  color: var(--bg-primary);
   background-color: var(--section-name);
   border: 2px solid var(--section-name);
   padding: var(--padding);
   font-size: 1.1rem;
-  border-radius: 35px;
+  border-radius: calc(var(--border-radius) * 5);
   transition: all 0.2s ease-in-out;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.btnHome:hover {
-  cursor: pointer;
-  background-color: transparent;
-  color: var(--bg);
-}
-
-.btnBody:hover {
-  cursor: pointer;
-  background-color: var(--bg);
-  color: var(--card-title);
-}
-
-.sentBtn {
-  animation-duration: 1.2s;
-  animation-name: circleTick;
-}
-
-.check {
-  width: 20px;
-  height: 20px;
-}
-
-@keyframes circleTick {
-  0% {
-    border-radius: 35px;
-    width: 200px;
-  }
-  40% {
-    border-radius: 50%;
-    width: 50px;
-  }
-  60% {
-    border-radius: 50%;
-    width: 50px;
-  }
-  100% {
-    border-radius: 35px;
-    width: 200px;
-  }
-}
-
-/* home styling */
 
 .companyCon {
   display: flex;
@@ -65,8 +21,8 @@
 }
 
 .companyName {
-  font-family: "Righteous", cursive;
-  color: var(--bg);
+  font-family: var(--font-company);
+  color: var(--bg-primary);
   display: flex;
   font-size: 2.5rem;
   margin-bottom: 5px;
@@ -79,36 +35,47 @@
 }
 
 .navList li {
-  list-style: none;
   font-size: 1.1rem;
 }
 
 .navList a {
   transition: all 0.1s ease-in-out;
-  color: var(--bg);
+  color: var(--bg-primary);
 }
 
 .navList a:hover {
-  color: var(--secondary-bright);
+  color: var(--text-light);
 }
 
 .companyIcon {
-  fill: var(--bg);
+  fill: var(--bg-primary);
   width: 50px;
 }
 
-/* card styling */
-
-.card {
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  max-width: 350px;
+.section {
+  height: fit-content;
+  min-height: 70vh;
+  padding: calc(var(--padding) * 4) calc(var(--padding) * 8);
+  margin-bottom: calc(var(--margin) * 5);
 }
 
-.cardMain {
-  color: var(--card-title);
+.paragraph {
+  color: var(--paragraph-text);
   font-size: 1rem;
-  font-weight: 900;
+  line-height: 22px;
+}
+
+.sectionName {
+  font-family: var(--font-secondary);
+  color: var(--section-name);
+  font-size: 1.1rem;
+}
+
+.sectionTitle {
+  color: var(--section-title);
+  padding-bottom: calc(var(--padding) * 2);
+  padding-top: var(--padding);
+  font-size: 2rem;
 }
 
 .cardsCon {
@@ -117,12 +84,23 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+.card {
+  border-radius: calc(var(--border-radius) * 2);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 350px;
+}
+
+.titlePrimary {
+  color: var(--title-text);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
 .lightShadow {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-/* galleries */
 .galleryCon {
   display: flex;
   gap: var(--gap);
@@ -156,51 +134,29 @@
   transition: all 0.1s ease-in-out;
 }
 
-.imgs:hover {
-  transform: scale(1.02);
-  filter: brightness(80%);
-}
-
-/* text styling */
-
-.secondaryBright {
-  color: var(--secondary-bright);
+.textSecondaryLight {
+  color: var(--text-light);
   font-size: 1rem;
 }
 
-.sectionName {
-  font-family: "Lobster", cursive;
-  color: var(--section-name);
-  font-size: 1.1rem;
-}
-
-.sectionTitle {
-  color: var(--section-title);
-  padding-bottom: calc(var(--padding) * 2);
-  padding-top: var(--padding);
-  font-size: 2rem;
-}
-
-.secondaryDark {
-  color: var(--secondary-dark);
+.textSecondaryDark {
+  color: var(--text-dark);
   font-size: 1rem;
 }
 
-.secondaryTitle {
-  color: var(--card-title);
+.titleSecondary {
+  color: var(--title-text);
   font-size: 1.5rem;
 }
-
-/* input styling */
 
 .inputStyle {
   padding: 5px;
   margin: 2px 0;
-  border: 1px solid var(--paragraph);
+  border: 1px solid var(--paragraph-text);
   border-radius: 3px;
   resize: none;
-  color: var(--card-title);
-  font-family: "Josefin Sans", sans-serif;
+  color: var(--title-text);
+  font-family: var(--font-primary);
   font-size: 1rem;
 }
 
@@ -210,7 +166,6 @@
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-/* icon styling */
 .cardIcons {
   fill: var(--section-name);
   width: 100px;
@@ -226,12 +181,60 @@
 .footerIcons {
   width: 30px;
   height: 30px;
-  fill: var(--bg);
+  fill: var(--bg-primary);
   transition: all 0.1s ease-in-out;
 }
 
-.footerIcons:hover {
-  fill: var(--secondary-bright);
+.sentBtn {
+  animation-duration: 1.2s;
+  animation-name: circleTick;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+}
+
+@keyframes circleTick {
+  0% {
+    border-radius: calc(var(--border-radius) * 5);
+    width: 200px;
+  }
+  40% {
+    border-radius: 50%;
+    width: 50px;
+  }
+  60% {
+    border-radius: 50%;
+    width: 50px;
+  }
+  100% {
+    border-radius: calc(var(--border-radius) * 5);
+    width: 200px;
+  }
+}
+
+@media (hover: hover) {
+  .btnHome:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--bg-primary);
+  }
+
+  .btnBody:hover {
+    cursor: pointer;
+    background-color: var(--bg-primary);
+    color: var(--title-text);
+  }
+
+  .imgs:hover {
+    transform: scale(1.02);
+    filter: brightness(80%);
+  }
+
+  .footerIcons:hover {
+    fill: var(--text-light);
+  }
 }
 
 @media (max-width: 900px) {
@@ -260,7 +263,7 @@
     font-size: 1.7rem;
   }
 
-  .secondaryTitle {
+  .titleSecondary {
     font-size: 1.4rem;
   }
 
@@ -270,5 +273,9 @@
 
   .companyIcon {
     width: 35px;
+  }
+
+  .section {
+    padding: var(--padding) calc(var(--padding) * 2);
   }
 }

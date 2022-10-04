@@ -15,10 +15,12 @@ function DestinationCard({ source, duration, location, reviews }) {
         effect="blur"
         {...className(style.destCardImg)}
       />
-      <span {...className(shared.secondaryBright, style.cardSecondary)}>
+      <span {...className(shared.textSecondaryLight, style.textSecondaryLight)}>
         {duration} day trip
       </span>
-      <span {...className(shared.cardMain, style.cardMain)}>{location}</span>
+      <span {...className(shared.titlePrimary, style.titlePrimary)}>
+        {location}
+      </span>
       <div {...className(style.reviewsCon)}>
         <div {...className(style.starsCon)}>
           <StarIcon {...className(style.starIcon)} />

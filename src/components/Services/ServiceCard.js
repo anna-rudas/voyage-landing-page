@@ -7,8 +7,10 @@ function ServiceCard({ service, text, icon }) {
   return (
     <div {...className(shared.card, style.serviceCard)}>
       {icon}
-      <span {...className(shared.cardMain, style.cardMain)}>{service}</span>
-      <p>{text}</p>
+      <span {...className(shared.titlePrimary, style.titlePrimary)}>
+        {service}
+      </span>
+      <p {...className(shared.paragraph)}>{text}</p>
     </div>
   );
 }

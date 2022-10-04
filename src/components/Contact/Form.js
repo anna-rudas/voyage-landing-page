@@ -45,9 +45,9 @@ function Form() {
 
   return (
     <div {...className(style.formCon)}>
-      <span {...className(shared.secondaryTitle)}>Send us a message!</span>
+      <span {...className(shared.titleSecondary)}>Send us a message!</span>
       <form
-        {...className(shared.secondaryBright, style.form)}
+        {...className(shared.textSecondaryLight, style.form)}
         onSubmit={handleSubmit}
       >
         <div {...className(style.formInputs)}>
@@ -77,7 +77,7 @@ function Form() {
         <button
           type="submit"
           {...className(
-            shared.btnBook,
+            shared.btn,
             shared.btnBody,
             isBtnPressed && shared.sentBtn
           )}

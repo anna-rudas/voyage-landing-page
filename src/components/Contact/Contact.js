@@ -8,7 +8,7 @@ import Details from "./Details";
 
 function Contact() {
   return (
-    <section id="contact">
+    <section id="contact" {...className(shared.section)}>
       <span {...className(shared.sectionName)}>Contact</span>
       <h2 {...className(shared.sectionTitle)}>How to get in touch</h2>
       <div {...className(style.contactCon)}>
