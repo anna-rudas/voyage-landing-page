@@ -1,6 +1,7 @@
 .contactCon {
   display: flex;
   width: 100%;
+  max-width: 1200px;
   padding: var(--padding);
   gap: calc(var(--gap) * 2);
 }

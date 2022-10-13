@@ -4,6 +4,7 @@
   gap: calc(var(--gap) * 2);
   grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
+  max-width: 1200px;
 }
 
 .groupImg {

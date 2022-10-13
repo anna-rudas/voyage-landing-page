@@ -11,7 +11,7 @@ const columnsPart = sliceArray(columns, 2);
 
 function Credit() {
   return (
-    <section {...className(style.credit)}>
+    <section {...className(shared.section, style.credit)}>
       <span {...className(shared.sectionName)}>Credits</span>
       <h2 {...className(shared.sectionTitle)}>
         Images used in the landing page
