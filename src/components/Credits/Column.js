@@ -1,6 +1,7 @@
 import React from "react";
 import { className } from "../../helpers";
 import * as shared from "../shared.module.css";
+import Image from "next/image";
 
 function Column({ columnArray }) {
   return (
@@ -12,9 +13,9 @@ function Column({ columnArray }) {
             rel="noreferrer"
             href={currentImage.credit}
             {...className(shared.imgs)}
-            key={currentImage.src}
+            key={currentImage.credit}
           >
-            <img src={currentImage.src} alt="" />
+            <Image src={currentImage.src} alt="" />
           </a>
         );
       })}

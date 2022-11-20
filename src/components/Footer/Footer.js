@@ -4,7 +4,7 @@ import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
 import CompanyIcon from "../../icons/CompanyIcon";
 import { socialMediaLinks, menuItems } from "../../constants";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -24,7 +24,7 @@ function Footer() {
           );
         })}
       </ul>
-      <Link to="/credits" {...className(style.creditStyle)}>
+      <Link href="/credits" {...className(style.creditStyle)}>
         Images credit
       </Link>
       <div {...className(style.iconCon)}>

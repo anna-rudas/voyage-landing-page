@@ -1,7 +1,7 @@
 .footer {
   height: fit-content;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../../images/footer.jpg");
+    url("/images/footer.jpg");
   background-size: cover;
   background-position: center;
   color: var(--bg-primary);

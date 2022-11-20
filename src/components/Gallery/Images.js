@@ -1,39 +1,80 @@
+import andrewDeslauriers from "../../../public/images/gallery/andrew-deslauriers.jpg";
+import carolineSelfors from "../../../public/images/gallery/caroline-selfors.jpg";
+import jairph from "../../../public/images/gallery/jairph.jpg";
+import dinoReichmuth from "../../../public/images/gallery/dino-reichmuth.jpg";
+import damianoBaschiera from "../../../public/images/gallery/damiano-baschiera.jpg";
+import ryan from "../../../public/images/gallery/ryan.jpg";
+import shifaazShamoon from "../../../public/images/gallery/shifaaz-shamoon.jpg";
+import ivanaCajina from "../../../public/images/gallery/ivana-cajina.jpg";
+import jackWard from "../../../public/images/gallery/jack-ward.jpg";
+import jakeBlucker from "../../../public/images/gallery/jake-blucker.jpg";
+import evaDarron from "../../../public/images/gallery/eva-darron.jpg";
+import yannicLaderach from "../../../public/images/gallery/yannic-laderach.jpg";
+import tomBarrett from "../../../public/images/gallery/tom-barrett.jpg";
+import ianDooley from "../../../public/images/gallery/ian-dooley.jpg";
+import lucaBravo from "../../../public/images/gallery/luca-bravo.jpg";
+import rolandsVarsbergs from "../../../public/images/gallery/rolands-varsbergs.jpg";
+
 const images = [
   {
-    src: require("../../images/gallery/andrew-deslauriers.jpg"),
+    src: andrewDeslauriers,
     credit: "@ipsum",
   },
   {
-    src: require("../../images/gallery/caroline-selfors.jpg"),
+    src: carolineSelfors,
     credit: "@dolor",
   },
-  { src: require("../../images/gallery/jairph.jpg"), credit: "@sit" },
-  { src: require("../../images/gallery/dino-reichmuth.jpg"), credit: "@amet" },
+  { src: jairph, credit: "@sit" },
   {
-    src: require("../../images/gallery/damiano-baschiera.jpg"),
+    src: dinoReichmuth,
+    credit: "@amet",
+  },
+  {
+    src: damianoBaschiera,
     credit: "@consectetur",
   },
-  { src: require("../../images/gallery/ryan.jpg"), credit: "@adipisicing" },
   {
-    src: require("../../images/gallery/shifaaz-shamoon.jpg"),
+    src: ryan,
+    credit: "@adipisicing",
+  },
+  {
+    src: shifaazShamoon,
     credit: "@elit_ipsum",
   },
-  { src: require("../../images/gallery/ivana-cajina.jpg"), credit: "@Fugit" },
-  { src: require("../../images/gallery/jack-ward.jpg"), credit: "@doloremque" },
-  { src: require("../../images/gallery/jake-blucker.jpg"), credit: "@alias" },
-  { src: require("../../images/gallery/eva-darron.jpg"), credit: "@omnis" },
   {
-    src: require("../../images/gallery/yannic-laderach.jpg"),
+    src: ivanaCajina,
+    credit: "@Fugit",
+  },
+  {
+    src: jackWard,
+    credit: "@doloremque",
+  },
+  {
+    src: jakeBlucker,
+    credit: "@alias",
+  },
+  {
+    src: evaDarron,
+    credit: "@omnis",
+  },
+  {
+    src: yannicLaderach,
     credit: "@debitis",
   },
-  { src: require("../../images/gallery/tom-barrett.jpg"), credit: "@nostrum" },
-  { src: require("../../images/gallery/ian-dooley.jpg"), credit: "@labore" },
   {
-    src: require("../../images/gallery/luca-bravo.jpg"),
+    src: tomBarrett,
+    credit: "@nostrum",
+  },
+  {
+    src: ianDooley,
+    credit: "@labore",
+  },
+  {
+    src: lucaBravo,
     credit: "@ipsum_aliquid",
   },
   {
-    src: require("../../images/gallery/rolands-varsbergs.jpg"),
+    src: rolandsVarsbergs,
     credit: "@explicabo",
   },
 ];

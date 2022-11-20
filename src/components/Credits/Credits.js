@@ -4,7 +4,7 @@ import * as style from "./Credits.module.css";
 import { sliceArray, className } from "../../helpers";
 import * as shared from "../shared.module.css";
 import Column from "./Column";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const columns = sliceArray(images, 7);
 const columnsPart = sliceArray(columns, 2);
@@ -28,7 +28,7 @@ function Credit() {
         })}
       </div>
       <div {...className(style.backToMain)}>
-        <Link to="/">
+        <Link href="/">
           <button {...className(shared.btn, shared.btnBody, style.btnBack)}>
             Back to the landing page
           </button>

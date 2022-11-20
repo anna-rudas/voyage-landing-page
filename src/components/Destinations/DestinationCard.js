@@ -3,13 +3,13 @@ import * as style from "./Destinations.module.css";
 import { className } from "../../helpers";
 import * as shared from "../shared.module.css";
 import StarIcon from "../../icons/StarIcon";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Image from "next/image";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 function DestinationCard({ source, duration, location, reviews }) {
   return (
     <a href="#destinations" {...className(style.destCard, shared.card)}>
-      <LazyLoadImage
+      <Image
         src={source}
         alt=""
         effect="blur"

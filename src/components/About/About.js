@@ -2,7 +2,8 @@ import React from "react";
 import * as style from "./About.module.css";
 import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
-import group from "../../images/group.jpg";
+import Image from "next/image";
+import group from "../../../public/images/group.jpg";
 import StatisticBubble from "./StatisticBubble";
 import { statBubbles } from "../../constants";
 
@@ -12,7 +13,7 @@ function About() {
       <span {...className(shared.sectionName)}>About us</span>
       <h2 {...className(shared.sectionTitle)}>Who we are</h2>
       <div {...className(style.aboutCon)}>
-        <img
+        <Image
           {...className(shared.lightShadow, style.groupImg)}
           src={group}
           alt="A group of people in an office"

@@ -110,6 +110,7 @@
   display: flex;
   gap: var(--gap);
   max-width: 2000px;
+  width: 100%;
 }
 
 .galleryPart {
@@ -129,6 +130,7 @@
 .column img {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .imgs {

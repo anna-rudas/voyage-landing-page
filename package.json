@@ -5,8 +5,9 @@
   "scripts": {
     "format": "prettier --write\"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "keywords": [],
   "author": "Anna Rudas <rudas.annamaria@gmail.com>",
@@ -26,6 +27,7 @@
     "last 2 Chrome versions"
   ],
   "dependencies": {
+    "next": "^13.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-lazy-load-image-component": "^1.5.5",

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as style from "./Home.module.css";
 import * as shared from "../shared.module.css";
 import { className } from "../../helpers";
@@ -12,7 +12,12 @@ function NavBar() {
     setIsMenuOpen(false);
   };
 
-  window.addEventListener("resize", handleResize);
+  useEffect(() => {
+    window?.addEventListener("resize", handleResize);
+    return () => {
+      window?.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <nav {...className(style.nav)}>
