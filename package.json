@@ -7,7 +7,8 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export"
   },
   "keywords": [],
   "author": "Anna Rudas <rudas.annamaria@gmail.com>",
